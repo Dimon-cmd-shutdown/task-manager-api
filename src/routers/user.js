@@ -23,7 +23,7 @@ const storage = multer.memoryStorage()
 const upload = multer({
     dest: 'avatars',
     limits: {
-        fileSize: 5000000
+        fileSize: 1000000
     },
     fileFilter(req, file, callback) {
         if (!file.originalname.match(/\.(jpg|jpeg|png)$/)) {
